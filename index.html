@@ -1,47 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Charity Water Landing Page</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <!-- Hero Section: This is the main banner at the top of the page -->
-    <section class="hero">
-        <!-- Main headline -->
-        <h1>Clean Water for Everyone</h1>
-        <!-- Subheadline -->
-        <p>Join us in bringing safe, clean water to communities in need.</p>
-    </section>
-
-    <!-- Story Section: This tells the story of the nonprofit -->
-    <section class="story">
-        <h2>Our Story</h2>
-        <p>
-         
-    </section>
-
-    <!-- Real-World Impact Story Section -->
-    <section class="impact-story">
-        <!-- Section headline -->
-        <h2>Real Impact: Meet Amina</h2>
-        <!-- Container for image and text -->
-        <div class="impact-content">
-            <!-- Impact image -->
-            <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=600&q=80" alt="Amina smiling with clean water" class="impact-image">
-            <!-- Impact story text -->
-            <p>
-                Amina used to walk miles every day to collect water for her family. Thanks to your support, her village now has a clean water well. Amina can go to school and her family is healthier and happier.
-            </p>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>charity: water</title>
+    <meta
+      name="description"
+      content="Small actions. Big impact. Support clean water for communities in need."
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="topbar">
+        <div class="brand" aria-label="charity: water logo">
+          <img src="img/cw_logo-2.png" alt="charity: water logo" class="logo" />
         </div>
-    </section>
 
-    <!-- Call-to-Action Section: This encourages visitors to take action -->
-    <section class="call-to-action">
-        <h2>Make a Difference</h2>
-        <p>Your support can help save lives. Every donation brings us closer to a world with clean water for all.</p>
-        <a href="#" class="donate-button">Donate Now</a>
-    </section>
-</body>
+        <nav class="main-nav" aria-label="Main navigation">
+          <a href="#">Our Work</a>
+          <a href="#">The Water Crisis</a>
+          <a href="#">Impact</a>
+          <a href="#">Get Involved</a>
+        </nav>
+
+        <a href="#" class="nav-donate">Donate</a>
+      </header>
+
+      <main class="hero">
+        <h1>
+          <span>Small Actions.</span>
+          <span>Big Impact.</span>
+        </h1>
+
+        <p class="supporting-copy">
+          You don't need to give a lot to make a difference. Small donations can
+          come together to help bring clean water to communities in need.
+        </p>
+
+        <form class="donation-form" action="#" method="get">
+          <div class="amount-row" aria-label="Choose a donation amount">
+            <input type="radio" name="donation" id="amount-5" checked />
+            <label for="amount-5">$5</label>
+
+            <input type="radio" name="donation" id="amount-10" />
+            <label for="amount-10">$10</label>
+
+            <input type="radio" name="donation" id="amount-20" />
+            <label for="amount-20">$20</label>
+
+            <input type="radio" name="donation" id="amount-other" />
+            <label for="amount-other">Other</label>
+          </div>
+
+          <button type="submit" class="impact-button">
+            MAKE MY IMPACT <span aria-hidden="true">→</span>
+          </button>
+          <p class="fine-print">EVERY CONTRIBUTION MATTERS.</p>
+        </form>
+
+        <div class="photo-row" aria-label="Impact photos">
+          <div class="photo-card">
+            <img
+              src="img/Screenshot%202026-09-17%20at%208.39.50%E2%80%AFPM.png"
+              alt="People gathering around a water project"
+            />
+          </div>
+
+          <div class="photo-card">
+            <img
+              src="img/Screenshot%202026-09-17%20at%208.40.03%E2%80%AFPM.png"
+              alt="A child using clean water"
+            />
+          </div>
+
+          <div class="photo-card">
+            <img
+              src="img/Screenshot%202026-09-17%20at%208.40.30%E2%80%AFPM.png"
+              alt="Children standing together with clean water access"
+            />
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
 </html>
+
